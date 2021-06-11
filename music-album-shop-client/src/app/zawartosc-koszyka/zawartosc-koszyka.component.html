@@ -1,0 +1,6 @@
+<div class="margines2">
+    <span *ngIf="artykuly.length == 0">Koszyk jest pusty</span>
+    <div>
+        <app-artykul *ngFor="let a of artykuly" [wartosc]="a"></app-artykul>
+    </div>
+</div>

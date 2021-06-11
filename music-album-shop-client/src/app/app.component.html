@@ -1,0 +1,17 @@
+<header>
+  <nav class="margines">
+    <div class="row">
+      <div class="col-8">
+        <p class="nav-brand mb-0 h1"><a routerLink="">Sklep z albumami muzycznymi!</a></p>
+        <router-outlet></router-outlet>
+      </div>
+      <div class="col-4">
+        <app-koszyk></app-koszyk>
+      </div>
+      <div class="col-4" *appAutoryzacja>
+        <button class="btn btn-primary" (click)="wyloguj()">Wyloguj</button>
+      </div>
+    </div>
+  </nav>
+</header>
+<br>

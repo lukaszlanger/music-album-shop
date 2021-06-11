@@ -1,0 +1,28 @@
+<div class="margines2">
+  <div class="form-row">
+    <div class="form-group col-md-2">
+      <label for="strona">Strona</label>
+      <input class="form-control" id="strona" type="number" [(ngModel)]="stronnicowanie.strona" (ngModelChange)="zmiana($event)">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="ilosc">Ilość</label>
+      <input class="form-control" id="ilosc" type="number" [(ngModel)]="stronnicowanie.ilosc">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="przejdz">Potwierdź</label>
+      <button class="btn btn-secondary form-control" id="przejdz" (click)="zmianaStronnicowania()">Pokaż >></button><br>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="osoba">Dodaj nową osobę</label>
+      <button class="btn btn-warning form-control" id="osoba" type="button" (click)="dodaj()">Dodaj +</button>
+    </div>
+  </div>
+</div>
+  <br>
+  <div>
+    <span *ngIf="artykuly.length == 0">Trwa wczytywanie...</span>
+    
+    <div *ngFor="let a of artykuly">
+        <app-artykul [wartosc]="a"></app-artykul>
+    </div>
+  </div>

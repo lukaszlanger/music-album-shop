@@ -1,0 +1,30 @@
+.artykul {
+    margin: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .15)
+}
+
+.koszyk {
+    float: right;
+    text-align: right;
+}
+
+header {
+    width: 98%;
+    height: 35px;
+    margin:10px;
+}
+
+.padding-center {
+    padding: 40px 0;
+}
+/*MENU*/
+.panel-body { padding:0px; }
+.panel-body table tr td { padding-left: 15px }
+.panel-body .table {margin-bottom: 0px; }
+
+.margines {
+    margin: 15px;
+}
+.margines2 {
+    margin-top: 25px;
+}
